@@ -1,10 +1,9 @@
-nclude <stdio.h>
-
+#include <stdio.h>
 /**
- *  * main - main block
- *   * Return: 0
- *    */
- 
+ * main - block 
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 		printf("Size of a char: %i byte(s)\n", sizeof(char));
