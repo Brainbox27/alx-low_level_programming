@@ -1,10 +1,28 @@
-#include <stdio.h>
+#include "main.h"
+
 /**
- * main - entry point
- *
- * Return: 0 after printing the function
- */
-int main(void)
-{puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+* reverse_array - reverses the content of an array of integers
+* @a: An array of integers
+* @n: Number of elements to swap
+*
+* Return: empty.
+*/
+void reverse_array(int *a, int n)
+{
+	int *d, i, aux, k;
+
+	d = a;
+
+	for (i = 1; i < n; i++)
+	{
+		d++;
+	}
+
+	for (k = 0; k < i / 2; k++)
+	{
+		aux = a[k];
+		a[k] = *d;
+		*d = aux;
+		d--;
+	}
 }
